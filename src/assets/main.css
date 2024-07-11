@@ -6,6 +6,6 @@
 @layer base {
   @font-face {
     font-family: 'Satoshi';
-    src: url(./fonts/Satoshi-Variable.ttf) format('ttf');
+    src: local('Satoshi-Variable'), url(@/assets/fonts/Satoshi-Variable.ttf) format('truetype');
   }
 }
