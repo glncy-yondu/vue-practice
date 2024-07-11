@@ -1,15 +1,14 @@
 <template>
   <div class="flex h-[182px] w-[152px] flex-col gap-y-3 border border-brand-gray-50 p-4">
-    <div
-      :class="twMerge(['flex h-[120px] w-[120px] flex-col justify-end px-1.5 py-2', selectedColor])"
-    ></div>
-    <p class="truncate text-xs">{{ selectedColor }}</p>
+    <div :class="['flex h-[120px] w-[120px] flex-col justify-end px-1.5 py-2', selectedColor]"></div>
+    <p class="truncate text-xs">{{ trimmedColorText }}</p>
   </div>
 </template>
 
 <script setup lang="ts">
-import { twMerge } from 'tailwind-merge'
-withDefaults(
+import { computed } from 'vue'
+
+const props = withDefaults(
   defineProps<{
     selectedColor: string
   }>(),
@@ -17,4 +16,8 @@ withDefaults(
     selectedColor: 'bg-brand-techy-blue'
   }
 )
+
+const selectedColor = computed(() => props.selectedColor)
+
+const trimmedColorText = computed(() => props.selectedColor.substring(9))
 </script>
