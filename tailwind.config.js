@@ -95,6 +95,9 @@ export default {
           DEFAULT: '#151C36'
         },
         background: '#FCFCFC'
+      },
+      fontFamily: {
+        satoshi: ['Satoshi']
       }
     }
   },
