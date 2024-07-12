@@ -2,14 +2,14 @@
   <button
     type="button"
     :class="[
-      'flex min-w-[200px] max-w-[200px] rounded-md px-[16px] py-4 text-sm font-medium hover:shadow-md',
+      'flex gap-[12px] max-h-[50px] rounded-md px-[16px] py-4 text-sm font-medium hover:shadow-md',
       classes
     ]"
     :disabled="disabled"
     @click="onClick"
   >
     <slot name="icon-left"></slot>
-    <span class="mx-[12px] truncate">{{ label }}</span>
+    <span class="truncate">{{ label }}</span>
     <slot name="icon-right"></slot>
   </button>
 </template>
@@ -42,8 +42,8 @@ const emit = defineEmits<{
 }>()
 
 const classes = computed(() => ({
-  'bg-brand-techy-blue focus:bg-brand-techy-blue-400 text-white disabled:bg-brand-gray-50': props.primary,
-  'bg-[#E6F4FE] text-brand-techy-blue-300 border border-1 border-white outline outline-1 outline-brand-techy-blue-300 focus:bg-brand-techy-blue focus:text-white disabled:outline-brand-techy-blue-75 disabled:bg-white disabled:text-brand-techy-blue-75': !props.primary,
+  'min-w-[200px] max-w-[200px] bg-brand-techy-blue border border-1 border-brand-techy-blue-75 focus:bg-brand-techy-blue-400 text-white disabled:bg-brand-gray-50': props.primary,
+  'min-w-[198px] max-w-[198px] bg-[#E6F4FE] text-brand-techy-blue-300 border border-1 border-white outline outline-1 outline-brand-techy-blue-300 focus:bg-brand-techy-blue focus:text-white disabled:outline-brand-techy-blue-75 disabled:bg-white disabled:text-brand-techy-blue-75': !props.primary,
   'justify-between': slots['icon-left'] || slots['icon-right'],
   'justify-center': !slots['icon-left'] && !slots['icon-right']
 }))
