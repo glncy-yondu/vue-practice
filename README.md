@@ -42,8 +42,10 @@ npm run lint
 
 ### Tailwind
 #### Pros
+- Rapid prototyping
 - Utility first
 - No more confusing semantic class names (`.section-inner-wrapper`, etc.)
+- Single source of truth
 - Mobile first
 - No more complex media queries
 - Tiny - automatically removes unused CSS
