@@ -37,3 +37,19 @@ npm run build
 ```sh
 npm run lint
 ```
+
+## Pros & Cons
+
+### Tailwind
+#### Pros
+- Utility first
+- No more confusing semantic class names (`.section-inner-wrapper`, etc.)
+- Mobile first
+- No more complex media queries
+- Tiny - automatically removes unused CSS
+- Comprehensive Docs
+- Popular (used by **Netflix Top 10**, **OpenAI**, **Shopify**, **Feastables**, etc)
+#### Cons
+- Slight learning curve
+- Verbose HTML (can be solved with `tailwind-fold`)
+- Initial setup (can be confusing for first time users)
