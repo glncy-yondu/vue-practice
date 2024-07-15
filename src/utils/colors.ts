@@ -19,7 +19,7 @@ const customColors = {
     500: '#81401C',
     DEFAULT: '#FFB838'
   },
-  'brand-pink': {
+  'brand-enthusiastic-pink': {
     50: '#FBECF1',
     75: '#F0B1C6',
     100: '#EA91AF',
@@ -29,7 +29,7 @@ const customColors = {
     500: '#852847',
     DEFAULT: '#DA4175'
   },
-  'brand-purple': {
+  'brand-insightful-purple': {
     50: '#F0ECF4',
     75: '#C3AFD2',
     100: '#AA8EBF',
@@ -39,7 +39,7 @@ const customColors = {
     500: '#422558',
     DEFAULT: '#6D3D91'
   },
-  'brand-teal': {
+  'brand-teal-appeal': {
     50: '#422558',
     75: '#A0F3EB',
     100: '#A0F3EB',
