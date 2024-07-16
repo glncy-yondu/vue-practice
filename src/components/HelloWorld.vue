@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import InputField from '@/components/atoms/InputField/InputField.vue'
+
 defineProps<{
   msg: string
 }>()
@@ -12,6 +14,7 @@ defineProps<{
       <a href="https://vitejs.dev/" target="_blank" rel="noopener">Vite</a> +
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>. What's next?
     </h3>
+    <InputField prefix-icon="CheckIcon" placeholder="Search for something" />
   </div>
 </template>
 
